@@ -32,14 +32,18 @@ class ArticlesController extends Controller
             'Body' => 'required'
         ]);
 
-        Article::create([
-            'Title' => request('Title'),
-            'Excerpt' => request('Excerpt'),
-            'Body' => request('Body'),
-        ]);
+        $article = new Article();
 
-        //            $this->validateArticle($request)
-//        );
+        $article->Title = request('Title');
+        $article->Excerpt = request('Excerpt');
+        $article->Body = request('Body');
+        $article->save();
+
+//        Article::create([
+//            'Title' => request('Title'),
+//            'Excerpt' => request('Excerpt'),
+//            'Body' => request('Body'),
+//        ]);
 
         return redirect(route('articles'));
     }
