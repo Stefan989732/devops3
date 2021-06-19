@@ -2,7 +2,7 @@
 
 <div>
     <p>Alles met een * invullen!</p>
-    <form method="POST" action="/">
+    <form method="POST" action="/articles">
         @csrf
 
         <label for="Title">* Title:</label><br>
