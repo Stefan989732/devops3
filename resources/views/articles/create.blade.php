@@ -1,6 +1,4 @@
-@extends('layout')
 
-@section('content')
     <h1 class="stopBeingSoDifficult">create new</h1>
 
     <div>
@@ -29,4 +27,4 @@
         </form>
 
     </div>
-@endsection
+

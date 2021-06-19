@@ -1,10 +1,7 @@
-@extends('layout')
 
 <head>
     <title>Articles</title>
 </head>
-
-@section('content')
 
     <h1 class="stopBeingSoDifficult">Articles</h1>
 
@@ -22,4 +19,3 @@
             </form>
         </div>
         @endforeach
-@endsection

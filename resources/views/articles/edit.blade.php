@@ -1,6 +1,4 @@
-@extends('layout')
 
-@section('content')
     <h1 class="stopBeingSoDifficult">Edit</h1>
 
     <div>
@@ -22,4 +20,4 @@
             <button type="submit">Delete</button>
         </form>
     </div>
-@endsection
+
