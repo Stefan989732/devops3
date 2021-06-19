@@ -11,7 +11,7 @@
         <div>
             <h3><a href="/articles/{{ $article->id }}" style="text-decoration:none">{{ $article->Title }}</a></h3>
             <p>{{ $article->Excerpt }}</p>
-        <button><a href="/articles/{{$article->id}}/edit"><span class="material-icons">mode</span></a></button>
+        <button><a href="/articles/{{$article->id}}/edit">Edit</a></button>
             <form class="button1" method="POST" action="/articles/{{ $article->id }}">
                 @csrf
                 @method('DELETE')
