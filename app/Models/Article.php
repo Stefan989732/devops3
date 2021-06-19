@@ -8,9 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Article extends Model
 {
     use HasFactory;
-    protected $fillable = ['Title', 'Excerpt', 'Body'];
 
-    public function path() {
-        return route('articles.show', $this);
+    protected $fillable = ['title', 'excerpt', 'body'];
+
+    public function path()
+    {
+        return route('article.show', $this);
     }
 }

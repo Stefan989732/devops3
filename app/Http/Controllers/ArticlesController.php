@@ -26,7 +26,9 @@ class ArticlesController extends Controller
 
     public function store(Request $request)
     {
-        Article::create($this->validateArticle($request));
+        Article::create(
+//            $this->validateArticle($request)
+        );
 
         return redirect(route('articles'));
     }
