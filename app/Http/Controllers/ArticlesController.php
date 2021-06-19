@@ -63,9 +63,9 @@ class ArticlesController extends Controller
     public function validateArticle()
     {
         return request()->validate([
-            'title' => 'required',
-            'excerpt' => 'required',
-            'body' => 'required'
+            'Title' => 'required',
+            'Excerpt' => 'required',
+            'Body' => 'required'
         ]);
     }
 }
