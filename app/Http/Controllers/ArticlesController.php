@@ -37,7 +37,7 @@ class ArticlesController extends Controller
             'Excerpt' => request('Excerpt'),
             'Body' => request('Body'),
         ]);
-        
+
         //            $this->validateArticle($request)
 //        );
 
