@@ -39,12 +39,6 @@ class ArticlesController extends Controller
         $article->Body = request('Body');
         $article->save();
 
-//        Article::create([
-//            'Title' => request('Title'),
-//            'Excerpt' => request('Excerpt'),
-//            'Body' => request('Body'),
-//        ]);
-
         return view('articles');
     }
 
