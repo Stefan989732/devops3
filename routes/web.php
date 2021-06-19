@@ -26,5 +26,5 @@ require __DIR__.'/auth.php';
 
 Route::get('articles', [ArticlesController::class, 'index'])->middleware(['auth'])->name('articles');
 
-Route::resource('/articles', ArticlesController::class);
+Route::resource('/articles', ArticlesController::class)->middleware(['auth']);
 
