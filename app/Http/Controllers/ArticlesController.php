@@ -52,11 +52,8 @@ class ArticlesController extends Controller
         return redirect(route('articles'));
     }
 
-    /**
-     * @param \Illuminate\Http\Request $request
-     * @return array
-     */
-    protected function validateArticle(Request $request): array
+
+    protected function validateArticle(Request $request)
     {
         return $request->validate([
             'Title' => 'required',
