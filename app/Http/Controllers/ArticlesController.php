@@ -11,7 +11,7 @@ class ArticlesController extends Controller
     {
         $articles = Article::latest()->get();
 
-        return view('articles.index', ['articles' => $articles]);
+        return view('articles', ['articles' => $articles]);
     }
 
     public function show(article $article)
@@ -47,7 +47,7 @@ class ArticlesController extends Controller
     {
         $article->delete();
 
-        return redirect(route('articles.index'));
+        return redirect(route('articles'));
     }
 
     /**
