@@ -45,7 +45,7 @@ class ArticlesController extends Controller
 //            'Body' => request('Body'),
 //        ]);
 
-        return redirect(route('articles'));
+        return view('articles');
     }
 
     public function edit(Article $article)
