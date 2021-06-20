@@ -6,19 +6,19 @@
         @csrf
 
         <label for="title">* Title:</label><br>
-        <input type="text" id="title" name="title" placeholder="Title" style="height: 42px">
+        <input type="text" id="title" name="title" placeholder="Title" style="height: 42px; width: 50%">
 
         @error('title')
         <p class="error">{{$errors->first('title')}}</p>
         @enderror
         <br><br>
         <label for="excerpt">* Excerpt:</label><br>
-        <textarea cols="2" rows="5" type="text" id="excerpt" name="excerpt" placeholder="short version" style="height: 125px"></textarea>
+        <textarea cols="2" rows="5" type="text" id="excerpt" name="excerpt" placeholder="short version" style="height: 125px; width: 50%"></textarea>
         @error('excerpt')
         <p class="error">{{$errors->first('excerpt')}}</p>
         @enderror<br><br>
         <label for="body">* Body:</label><br>
-        <textarea cols="5" rows="5" type="text" id="body" name="body" placeholder="full version" style="height: 375px"></textarea>
+        <textarea cols="5" rows="5" type="text" id="body" name="body" placeholder="full version" style="height: 375px; width: 50%"></textarea>
         @error('body')
         <p class="error">{{$errors->first('body')}}</p>
         @enderror<br><br>
