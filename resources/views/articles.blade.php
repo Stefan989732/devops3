@@ -9,8 +9,8 @@
         <button><a href="articles/create" style="text-decoration: none"><span class="material-icons">add</span></a></button><br><br>
     @foreach($articles as $article)
         <div>
-            <h3><a href="/articles/{{ $article->id }}" style="text-decoration:none">{{ $article->Title }}</a></h3>
-            <p>{{ $article->Excerpt }}</p>
+            <h3><a href="/articles/{{ $article->id }}" style="text-decoration:none">{{ $article->title }}</a></h3>
+            <p>{{ $article->excerpt }}</p>
         <button><a href="/articles/{{$article->id}}/edit">Edit</a></button>
             <form class="button1" method="POST" action="/articles/{{ $article->id }}">
                 @csrf
