@@ -60,7 +60,7 @@ class ArticlesController extends Controller
     {
         $article->delete();
 
-        return redirect(route('/articles'));
+        return redirect('/articles');
     }
 
 
