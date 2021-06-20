@@ -5,8 +5,8 @@
     <form method="POST" action="/articles">
         @csrf
 
-        <label for="Title">* Title:</label><br>
-        <input type="text" id="Title" name="title" placeholder="Title" style="height: 42px">
+        <label for="title">* Title:</label><br>
+        <input type="text" id="title" name="title" placeholder="Title" style="height: 42px">
 
         @error('title')
         <p class="error">{{$errors->first('title')}}</p>
