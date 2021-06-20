@@ -1,4 +1,4 @@
-<h1 class="stopBeingSoDifficult">create new</h1>
+<h1>create new</h1>
 
 <div>
     <p>Alles met een * invullen!</p>

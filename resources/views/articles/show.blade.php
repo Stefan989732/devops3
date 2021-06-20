@@ -4,10 +4,10 @@
 </head>
 
 
-    <h1 class="stopBeingSoDifficult">Articles</h1>
+    <h1>Articles</h1>
 
     <div class="strengths">
-           <h3>{{ $article->Title }}</h3>
-            <p>{{ $article->Body }}</a></p>
+           <h3>{{ $article->title }}</h3>
+            <p>{{ $article->body }}</a></p>
         <button><a href="/articles/{{$article->id}}/edit">Edit</a></button>
     </div>
